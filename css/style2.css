@@ -17,7 +17,6 @@ body{
     width: 220px;
     height: 345px;
     border-radius: 5px;
-    background-color: white;
     box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
     box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
@@ -41,7 +40,6 @@ body{
 
 .element1 .points{
     font-weight: bolder;
-    text-transform: uppercase;
     margin-top: 5px;
     margin-right: 10px;
     font-size: 25px;
