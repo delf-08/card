@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 15%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,26 +16,53 @@ body{
 .container{
     width: 220px;
     height: 345px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
     box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
+
+    overflow: hidden;
 }
 
-.badge{
-    background-color: red;
+.image-card{
+    object-fit: cover;
+    -webkit-transition:all .7s ease;
+}
+
+.image-card:hover{
+    filter: brightness(60%);
+    transform: (1.5);
+    transform: scale(1.15);
+}
+
+.badge {
+    background-color: rgb(227, 0, 129);
     position: absolute;
     margin-top: -50px;
     margin-left: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 5px 2px; 
+    color: white;
+    
+    height: 3%;
+    width: 6%;
+
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.heading-badge{
     display: flex;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .element1{
     display: flex;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 0 5px 10px 5px;
+    font-size: 14px;
 }
 
 .element1 .points{
@@ -52,11 +79,13 @@ body{
 .element2{
     padding: 0 5px;
     margin-top: -40px;
+    font-size: 13px;
 }
 
 .element3{
     color: gray;
     padding-left: 5px;
-    margin-top: -10px;
+    margin-top: -20px;
     font-size: 12px;
+    padding-top: 10px;
 }
