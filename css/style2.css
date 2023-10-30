@@ -17,12 +17,13 @@ body{
     width: 220px;
     height: 345px;
     border-radius: 8px;
-    box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
-    box-shadow: -9px 9px 21px -4px rgba(0,0,0,0.75);
+    box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
+    -moz-box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
+    box-shadow: -5px 6px 15px -2px rgba(0,0,0,0.266);
 }
 
 .container-image{
+    border-radius: 5px 5px 0 0;
     overflow: hidden;
 }
 
@@ -35,6 +36,7 @@ body{
     filter: brightness(60%);
     transform: (1.5);
     transform: scale(1.15);
+    border-radius: 5px 5px 0 0;
 }
 
 .badge {
