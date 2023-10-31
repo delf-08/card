@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- te le puse otra font (es opcional si) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Card</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- te le puse un contenedor princial -->
+    <div class="main-container">
+      <!-- Te le cambie el name de la clase a card-container -->
+      <div class="card-container">
+        <div class="container-image">
+          <img class="image-card" src="./fotos/vielkita.jpeg" alt="Vielka" />
+        </div>
 
-    <div class="container">
+        <div class="badge">
+          <!-- Te le compuse aqui porque tenias como contenedor un h3 donde tenia dentro el icono y el texto, tenias que almacenarlo en el div. por eso no se te centraba -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-news"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"
+            ></path>
+            <path d="M8 8l4 0"></path>
+            <path d="M8 12l4 0"></path>
+            <path d="M8 16l4 0"></path>
+          </svg>
+          <h3>Article</h3>
+        </div>
 
-        
-            <div class="container-image">
-                <img class="image-card" src="./fotos/vielkita.jpeg" alt="Vielka">
+        <!-- te le puse un contenedor de elementos a la card donde esta todo lo de abajo de la imagen de la card se llama body-card el div -->
+        <div class="body-card">
+          <!-- Te le puse otro contenedor a los elementos de la hora de 25min y el button de 3 puntos -->
+          <div class="hr-and-btn">
+            <p class="hr">25 min</p>
+            <!-- te le cambie de h2 a button porque es un button -->
+            <button class="btn">...</button>
+          </div>
+
+          <!-- Otro contenedor para el text grande que es un textarea pero ahorita lo dejamos en texto normal y el draft -->
+
+          <div class="txt-draft">
+            <div class="textArea">
+              <h2>Meet the team in the office</h2>
             </div>
 
-            <div class="badge"> 
-                <h3 class="heading-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"></path>
-                    <path d="M8 8l4 0"></path>
-                    <path d="M8 12l4 0"></path>
-                    <path d="M8 16l4 0"></path>
-                </svg>                    
-                Article</h3>
+            <div class="draft">
+              <p>Draft</p>
             </div>
-
-            <div class="element1">
-                <p>25 min</p>
-                <h2 class="points">...</h2>
-            </div>
-
-            <div class="element2">
-                <h2>Meet the team in the office</h2>
-            </div>
-
-            <div class="element3">
-                <p>Draft</p>
-            </div>
-
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

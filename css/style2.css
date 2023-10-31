@@ -1,95 +1,136 @@
-body{
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Heebo", sans-serif;
+  }
+  
+  /* Aqui esta centrado todo desde el main-container */
+  .main-container {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 15%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.container img{
-    width: 220px;
-    height: 200px;
-    border-radius: 5px 5px 0 0;
+    justify-content: center;
+  }
+  
+  .card-container img {
+    width: 100%; /*le di 100% a width para que alcance todo el ancho del contedor*/
+    height: 100%; /* le di 100% a height para que alcance todo el alto del contedor*/
+    border-radius: 8px 8px 0 0; /*Le cambie el border a 8px*/
+  
     position: relative;
-}
-
-.container{
+    overflow: hidden;
+  }
+  
+  .card-container {
     width: 220px;
     height: 345px;
     border-radius: 8px;
-    box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
+  
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+    /*Esos de abajo solo con el box shadow basta y tenias dos box shadows*/
+  
+    /* box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
     -moz-box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
-    box-shadow: -5px 6px 15px -2px rgba(0,0,0,0.266);
-}
-
-.container-image{
+    box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266); */
+  }
+  
+  .container-image {
+    width: 100%;
+    height: 50%;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-}
-
-.image-card{
+  }
+  
+  .image-card {
     object-fit: cover;
-    -webkit-transition:all .7s ease;
-}
-
-.image-card:hover{
+    transition: all 0.5s ease;
+  }
+  
+  .image-card:hover {
     filter: brightness(60%);
     transform: (1.5);
     transform: scale(1.15);
     border-radius: 5px 5px 0 0;
-}
-
-.badge {
+  }
+  
+  .badge {
+    /* Use display flex y justify-content para centrar los elementos del badge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     background-color: rgb(227, 0, 129);
     position: absolute;
     margin-top: -50px;
     margin-left: 15px;
-    border-radius: 20px;
-    padding: 5px; 
+    border-radius: 15px;
+    padding: 5px;
     color: white;
-    
     height: 25px;
     width: 100px;
-
     text-transform: uppercase;
     font-size: 10px;
-}
-
-.heading-badge{
+  }
+  
+  /* Te le puse un padding para que se vean alineados con el badge y no esten pegados a la card */
+  .body-card {
+    padding: 0.7rem;
+  }
+  
+  .heading-badge {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-}
-
-.element1{
+  }
+  
+  /* El contenedor del button y la hora */
+  .hr-and-btn {
     display: flex;
     justify-content: space-between;
-    padding: 0 5px 10px 5px;
-    font-size: 14px;
-}
-
-.element1 .points{
-    font-weight: bolder;
-    margin-top: 5px;
-    margin-right: 10px;
-    font-size: 25px;
-}
-
-.element1 p{
+    width: 100%;
+    height: 45px;
     color: gray;
-}
-
-.element2{
-    padding: 0 5px;
-    margin-top: -40px;
     font-size: 13px;
-}
-
-.element3{
+  }
+  
+  /* estilo del button */
+  .btn {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 40px;
+    height: 90%;
+  }
+  
+  /* Hover del button */
+  .btn:hover {
+    background: gainsboro;
+  }
+  
+  /* aqui ya esta estilizado todo el contenedor y los elementos dentro de el */
+  .txt-draft {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textArea {
+    font-size: 13px;
+  }
+  
+  .draft {
+    /* margin-top: px; */
     color: gray;
-    padding-left: 5px;
-    margin-top: -20px;
+  
     font-size: 12px;
-    padding-top: 10px;
-}
+  }
+  
