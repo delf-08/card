@@ -28,12 +28,6 @@ body {
     border-radius: 8px;
   
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  
-    /*Esos de abajo solo con el box shadow basta y tenias dos box shadows*/
-  
-    /* box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
-    -moz-box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266);
-    box-shadow: -5px 6px 15px -2px rgba(0, 0, 0, 0.266); */
   }
   
   .container-image {
@@ -46,13 +40,13 @@ body {
   .image-card {
     object-fit: cover;
     transition: all 0.5s ease;
+    border-radius: 5px 5px 0 0;
   }
   
   .image-card:hover {
     filter: brightness(60%);
     transform: (1.5);
     transform: scale(1.15);
-    border-radius: 5px 5px 0 0;
   }
   
   .badge {
@@ -74,16 +68,9 @@ body {
     font-size: 10px;
   }
   
-  /* Te le puse un padding para que se vean alineados con el badge y no esten pegados a la card */
+  /* le puse un padding para que se vean alineados con el badge y no esten pegados a la card */
   .body-card {
     padding: 0.7rem;
-  }
-  
-  .heading-badge {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
   }
   
   /* El contenedor del button y la hora */
@@ -128,9 +115,7 @@ body {
   }
   
   .draft {
-    /* margin-top: px; */
     color: gray;
-  
     font-size: 12px;
   }
   
